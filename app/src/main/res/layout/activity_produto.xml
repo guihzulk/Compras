@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:onClick="calcular"
+    android:orientation="vertical"
+    tools:context=".ProdutoActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="DADOS DO PRODUTO"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/ckProd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Produto 1 - R$150,00" />
+
+    <CheckBox
+        android:id="@+id/ckProd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Produto 2 - R$200,00" />
+
+    <CheckBox
+        android:id="@+id/ckProd3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Produto 3 - R$350,00" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Total da compra"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="total" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:onClick="calcular"
+        android:text="CALCULAR" />
+
+    <Button
+        android:id="@+id/btnProximoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="proximo"
+        android:text="PRÓXIMA" />
+</LinearLayout>
